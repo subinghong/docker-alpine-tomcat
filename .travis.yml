@@ -11,7 +11,7 @@ before_install:
   - curl -o sample.war https://tomcat.apache.org/tomcat-8.0-doc/appdev/sample/sample.war
 
 script:
-  - docker run -d -p 8080:8080 tomcat /opt/tomcat/bin/catalina.sh run
-  - docker cp ./sample.war tomcat:/opt/tomcat/webapps/sample.war
+  - docker run -d -p 8080:8080 -t tomcat-ci tomcat /opt/tomcat/bin/catalina.sh run
+  - docker cp ./sample.war tomcat-ci:/opt/tomcat/webapps/sample.war
   - sleep 30
   - curl http://localhost:8080/sample/
