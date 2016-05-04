@@ -13,9 +13,9 @@ Extends [`davidcaste/alpine-java-unlimited-jce`](https://hub.docker.com/r/davidc
 
 ### Versions
 
-**Tomcat 8 Version**: `8.0.32`  
-**Tomcat 7 Version**: `7.0.68`  
-**JRE8/JDK8 Version**: `8u74-b02`  
+**Tomcat 8 Version**: `8.0.33`
+**Tomcat 7 Version**: `7.0.69`
+**JRE8/JDK8 Version**: `8u92-b14`
 **JRE7/JDK7 Version**: `7u80-b15`
 
 ### Tags
