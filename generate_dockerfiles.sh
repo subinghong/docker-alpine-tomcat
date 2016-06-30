@@ -5,7 +5,7 @@ set -o pipefail -e
 TEMPLATE="Dockerfile.tpl"
 
 JVM_VERSIONS=( 7 8 )
-TOMCAT_VERSIONS=( 7.0.69 8.0.33 )
+TOMCAT_VERSIONS=( 7.0.69 8.5.3)
 
 for JVM_VERSION in ${JVM_VERSIONS[@]}; do
   for TOMCAT_VERSION in ${TOMCAT_VERSIONS[@]}; do

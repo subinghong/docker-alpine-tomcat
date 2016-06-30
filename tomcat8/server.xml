@@ -68,7 +68,9 @@
     -->
     <Connector port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
-               redirectPort="8443" />
+               redirectPort="8443" >
+      <UpgradeProtocol className="org.apache.coyote.http2.Http2Protocol" />
+    </Connector>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -84,9 +86,10 @@
     <!--
     <Connector port="8443" protocol="org.apache.coyote.http11.Http11Protocol"
                maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
-               clientAuth="false" sslProtocol="TLS" />
+               clientAuth="false" sslProtocol="TLS" >
+      <UpgradeProtocol className="org.apache.coyote.http2.Http2Protocol" />
+    </Connector>
     -->
-
     <!-- Define an AJP 1.3 Connector on port 8009 -->
     <Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />
 
