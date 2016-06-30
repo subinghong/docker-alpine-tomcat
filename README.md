@@ -6,14 +6,14 @@
 
 Basic [Docker](https://www.docker.com/) image to run [Tomcat](https://tomcat.apache.org/) and [Java](https://www.java.com/) with unlimited JCE patch applied.
 
-This image is based on [AlpineLinux](http://alpinelinux.org/) to keep the size dow, yet smaller images do exist. Includes BASH, since many Java applications like to have convoluted BASH start-up scripts.
+This image is based on [AlpineLinux](http://alpinelinux.org/) to keep the size down, yet smaller images do exist. Includes BASH, since many Java applications like to have convoluted BASH start-up scripts.
 
 Extends [`davidcaste/alpine-java-unlimited-jce`](https://hub.docker.com/r/davidcaste/alpine-java-unlimited-jce/).
 
 
 ### Versions
 
-**Tomcat 8 Version**: `8.0.33`  
+**Tomcat 8 Version**: `8.5.3`  
 **Tomcat 7 Version**: `7.0.69`  
 **JRE8/JDK8 Version**: `8u92-b14`  
 **JRE7/JDK7 Version**: `7u80-b15`
